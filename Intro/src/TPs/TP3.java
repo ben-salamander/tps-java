@@ -1,3 +1,5 @@
+package TPs;
+
 import java.util.Scanner;
 
 public class TP3 {
