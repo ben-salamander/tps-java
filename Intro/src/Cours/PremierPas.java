@@ -1,3 +1,5 @@
+package Cours;
+
 public class PremierPas {
     public static void main(String[] args){
         int age;

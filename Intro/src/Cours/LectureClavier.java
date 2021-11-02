@@ -1,3 +1,5 @@
+package Cours;
+
 import java.util.Scanner;
 
 class LectureClavier {

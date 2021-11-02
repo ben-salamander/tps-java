@@ -1,3 +1,5 @@
+package Cours;
+
 public class Expression {
     public static void main(String[] args) {
         double nombre1 = 12;
