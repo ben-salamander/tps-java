@@ -38,7 +38,7 @@ public class TP15 {
         System.out.printf("T1 : %s", Arrays.toString(tab1));
         System.out.printf("\nT2 : %s", Arrays.toString(tab2));
         System.out.printf("\nT3 : %s", Arrays.toString(tab3));
-        System.out.printf("\nS = ");
+        System.out.print("\nS = ");
 
         boolean firstElement = true;
         //Tab1
