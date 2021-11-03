@@ -24,7 +24,7 @@ public class TP8 {
                 double x = ((-1)*b)/2.0*a;
                 System.out.printf("La solution de l'équation est x=%f",x);
             } else {
-                System.out.print("Cette équation n'a pas de solution");
+                System.out.print("Cette équation n'a pas de solution réel");
             }
         }
     }
