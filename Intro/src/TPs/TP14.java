@@ -21,16 +21,16 @@ public class TP14 {
         int valFrequent = 0;
         int nbFrequent = 0;
 
-        for (int tabEntier : tabEntiers) {
+        for (int e : tabEntiers) {
             //Tab to List, pour utiliser Collections.frequency
             int nbFreq = Collections.frequency(
                     Arrays.stream(tabEntiers)
                     .boxed()
                     .toList()
-                    , tabEntier);
+                    , e);
             if (nbFreq > nbFrequent) {
                 nbFrequent = nbFreq;
-                valFrequent = tabEntier;
+                valFrequent = e;
             }
         }
 

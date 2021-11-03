@@ -49,7 +49,8 @@ public class TP15 {
                     System.out.printf("%d",e);
                     firstElement = false;
                 } else {
-                    System.out.printf("+%d",e);
+                    if (e >=0) {System.out.printf("+%d",e);}
+                    else {System.out.printf("%d",e);}
                 }
             }
         }
@@ -61,7 +62,8 @@ public class TP15 {
                     System.out.printf("%d",e);
                     firstElement = false;
                 } else {
-                    System.out.printf("+%d",e);
+                    if (e >=0) {System.out.printf("+%d",e);}
+                    else {System.out.printf("%d",e);}
                 }
             }
         }
@@ -73,7 +75,8 @@ public class TP15 {
                     System.out.printf("%d",e);
                     firstElement = false;
                 } else {
-                    System.out.printf("+%d",e);
+                    if (e >=0) {System.out.printf("+%d",e);}
+                    else {System.out.printf("%d",e);}
                 }
             }
         }

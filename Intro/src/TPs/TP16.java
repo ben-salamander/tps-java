@@ -16,8 +16,8 @@ public class TP16 {
         }
 
         //Traitement
-        int min = 0;
-        int max = 0;
+        int min = tab[0];
+        int max = tab[0];
         for (int e:tab) {
             if (e<min) min = e;
             if (e>max) max = e;
