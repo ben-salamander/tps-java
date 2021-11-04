@@ -37,9 +37,13 @@ public class TP17 {
         alphabet.put(23,'x');
         alphabet.put(24,'y');
         alphabet.put(25,'z');
+        alphabet.put(26,',');
+        alphabet.put(27,'.');
+        alphabet.put(28,'!');
+        alphabet.put(29,'*');
 
         //Traitement
-        int[] compteurLettre = new int[26];
+        int[] compteurLettre = new int[alphabet.size()];
         String stringInLower = string.toLowerCase(Locale.ROOT);
         for (int i=0; i<string.length(); i++) {
             if (alphabet.containsValue(stringInLower.toCharArray()[i])){
