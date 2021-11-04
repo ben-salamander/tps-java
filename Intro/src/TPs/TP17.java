@@ -43,9 +43,9 @@ public class TP17 {
         String stringInLower = string.toLowerCase(Locale.ROOT);
         for (int i=0; i<string.length(); i++) {
             if (alphabet.containsValue(stringInLower.toCharArray()[i])){
-                for (int j = 0; j < 26; j++) {
+                for (int j = 0; j < alphabet.size(); j++) {
                     if (alphabet.get(j+1) == stringInLower.toCharArray()[i]){
-                        compteurLettre[j+1]++;
+                        compteurLettre[j]++;
                     }
                 }
             }
@@ -55,7 +55,7 @@ public class TP17 {
         System.out.printf("'%s' est composé de :",string);
         for (int i = 0; i < compteurLettre.length; i++) {
             if (compteurLettre[i] != 0){
-                System.out.printf("\n%s : %d",alphabet.get(i),compteurLettre[i]);
+                System.out.printf("\n%s : %d",alphabet.get(i+1),compteurLettre[i]);
             }
         }
     }
