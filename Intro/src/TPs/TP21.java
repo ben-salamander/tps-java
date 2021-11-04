@@ -13,10 +13,10 @@ public class TP21 {
         //Traitement
         for (int i = 0; i < chaine.length(); i++) {
             if ((i == 0)){
-                chaine = chaine.substring(0,i) + chaine.substring(i,i+1).toUpperCase(Locale.ROOT) +chaine.substring(i+1);
+                chaine = chaine.substring(i,i+1).toUpperCase() + chaine.substring(i+1);
             }else {
                 if (chaine.charAt(i-1) == ' '){
-                    chaine = chaine.substring(0,i) + chaine.substring(i,i+1).toUpperCase(Locale.ROOT) +chaine.substring(i+1);
+                    chaine = chaine.substring(0,i) + chaine.substring(i,i+1).toUpperCase() + chaine.substring(i+1);
                 }
             }
         }
