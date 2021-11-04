@@ -11,32 +11,32 @@ public class TP17 {
         String string = keyboard.nextLine();
         //Alphabet
         HashMap<Integer,Character> alphabet = new HashMap<>();
-        alphabet.put(1,'a');
-        alphabet.put(2,'b');
-        alphabet.put(3,'c');
-        alphabet.put(4,'d');
-        alphabet.put(5,'e');
-        alphabet.put(6,'f');
-        alphabet.put(7,'g');
-        alphabet.put(8,'h');
-        alphabet.put(9,'i');
-        alphabet.put(10,'j');
-        alphabet.put(11,'k');
-        alphabet.put(12,'l');
-        alphabet.put(13,'m');
-        alphabet.put(14,'n');
-        alphabet.put(15,'o');
-        alphabet.put(16,'p');
-        alphabet.put(17,'q');
-        alphabet.put(18,'r');
-        alphabet.put(19,'s');
-        alphabet.put(20,'t');
-        alphabet.put(21,'u');
-        alphabet.put(22,'v');
-        alphabet.put(23,'w');
-        alphabet.put(24,'x');
-        alphabet.put(25,'y');
-        alphabet.put(26,'z');
+        alphabet.put(0,'a');
+        alphabet.put(1,'b');
+        alphabet.put(2,'c');
+        alphabet.put(3,'d');
+        alphabet.put(4,'e');
+        alphabet.put(5,'f');
+        alphabet.put(6,'g');
+        alphabet.put(7,'h');
+        alphabet.put(8,'i');
+        alphabet.put(9,'j');
+        alphabet.put(10,'k');
+        alphabet.put(11,'l');
+        alphabet.put(12,'m');
+        alphabet.put(13,'n');
+        alphabet.put(14,'o');
+        alphabet.put(15,'p');
+        alphabet.put(16,'q');
+        alphabet.put(17,'r');
+        alphabet.put(18,'s');
+        alphabet.put(19,'t');
+        alphabet.put(20,'u');
+        alphabet.put(21,'v');
+        alphabet.put(22,'w');
+        alphabet.put(23,'x');
+        alphabet.put(24,'y');
+        alphabet.put(25,'z');
 
         //Traitement
         int[] compteurLettre = new int[26];
@@ -44,7 +44,7 @@ public class TP17 {
         for (int i=0; i<string.length(); i++) {
             if (alphabet.containsValue(stringInLower.toCharArray()[i])){
                 for (int j = 0; j < alphabet.size(); j++) {
-                    if (alphabet.get(j+1) == stringInLower.toCharArray()[i]){
+                    if (alphabet.get(j) == stringInLower.toCharArray()[i]){
                         compteurLettre[j]++;
                     }
                 }
@@ -55,7 +55,7 @@ public class TP17 {
         System.out.printf("'%s' est composé de :",string);
         for (int i = 0; i < compteurLettre.length; i++) {
             if (compteurLettre[i] != 0){
-                System.out.printf("\n%s : %d",alphabet.get(i+1),compteurLettre[i]);
+                System.out.printf("\n%s : %d",alphabet.get(i),compteurLettre[i]);
             }
         }
     }
