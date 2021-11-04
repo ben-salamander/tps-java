@@ -7,7 +7,7 @@ public class TP22 {
     public static void main(String[] args) {
         //Saisie
         Scanner keyboard = new Scanner(System.in);
-        System.out.print("Saisissez une chSansDoublons à tester : ");
+        System.out.print("Saisissez une chaine à tester : ");
         String chDepart = keyboard.nextLine();
         String chSansDoublons = chDepart;
 
