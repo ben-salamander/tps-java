@@ -14,7 +14,7 @@ public class TP23 {
         //Saisie
         //Liste des prog
         while (true){
-            System.out.print("\nSaisir un nouveau langage de programmation à ajouter à la liste : ");
+            System.out.print("\nSaisir un nouveau langage de programmation à ajouter à la liste :(Taper entrer pour sortir)\n : ");
             prog = keyboard.nextLine();
             if (prog.equals("")) break;
             progLangue.add(prog);
@@ -23,7 +23,7 @@ public class TP23 {
 
         //Liste des prog non désirés
         while (true){
-            System.out.print("\nSaisir un langage de programmation à supprimer à la liste : ");
+            System.out.print("\nSaisir un langage de programmation à supprimer à la liste :(Taper entrer pour sortir)\n : ");
             prog = keyboard.nextLine();
             if (prog.equals("")) break;
             progLangueNotDesire.add(prog);

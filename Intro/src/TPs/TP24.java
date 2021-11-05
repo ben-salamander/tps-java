@@ -15,27 +15,27 @@ public class TP24 {
         //Saisie
         //Liste des num
         while (true){
-            System.out.print("\nSaisir un nombre à ajouter à la liste : ");
+            System.out.print("\nSaisir un nombre à ajouter à la liste\n(Taper entrer pour sortir)\n : ");
             sortie = keyboard.nextLine();
             if (sortie.equals("")) break;
-            num = (int) Integer.getInteger(sortie);
+            num = (int) Integer.parseInt(sortie);
             nombre.add(num);
             System.out.print(nombre);
         }
 
         //Liste des num non désirés
         while (true){
-            System.out.print("\nSaisir un nombre à supprimer à la liste : ");
+            System.out.print("\nSaisir un nombre à supprimer à la liste\n(Taper entrer pour sortir)\n : ");
             sortie = keyboard.nextLine();
             if (sortie.equals("")) break;
-            num = (int) Integer.getInteger(sortie);
+            num = (int) Integer.parseInt(sortie);
             nombreARetirer.add(num);
             System.out.print(nombreARetirer);
         }
 
         //Suppression des langages à enlever
         for (int numero:nombreARetirer) {
-            while (nombre.contains(numero)) nombre.remove(numero);
+            nombre.removeIf(n -> n == numero);
         }
         System.out.print(nombre);
     }
