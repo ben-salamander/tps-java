@@ -24,7 +24,6 @@ public class TP24 {
             if (sortie.equals("")) break;
             num = (int) Integer.getInteger(sortie);
             nombre.add(num);
-            System.out.flush();
             System.out.print(nombre);
         }
 
@@ -35,7 +34,6 @@ public class TP24 {
             if (sortie.equals("")) break;
             num = (int) Integer.getInteger(sortie);
             nombreARetirer.add(num);
-            System.out.flush();
             System.out.print(nombreARetirer);
         }
 

@@ -22,7 +22,6 @@ public class TP23 {
             prog = keyboard.nextLine();
             if (prog.equals("")) break;
             progLangue.add(prog);
-            System.out.flush();
             System.out.print(progLangue);
         }
 
@@ -32,7 +31,6 @@ public class TP23 {
             prog = keyboard.nextLine();
             if (prog.equals("")) break;
             progLangueNotDesire.add(prog);
-            System.out.flush();
             System.out.print(progLangueNotDesire);
         }
 
