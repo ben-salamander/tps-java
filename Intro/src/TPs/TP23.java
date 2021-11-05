@@ -1,10 +1,6 @@
 package TPs;
 
-import com.sun.source.tree.WhileLoopTree;
-import com.sun.tools.jconsole.JConsoleContext;
-
 import java.util.ArrayList;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class TP23 {
