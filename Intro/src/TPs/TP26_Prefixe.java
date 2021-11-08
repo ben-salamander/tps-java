@@ -1,11 +1,12 @@
 package TPs;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class TP26_Prefixe {
     //Methodes
     static boolean isPrefixe (String mot, String prefixe){
-        return mot.startsWith(prefixe);
+        return mot.substring(0, prefixe.length()).equals(prefixe);
     }
 
     //MAIN
