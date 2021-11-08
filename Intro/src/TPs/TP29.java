@@ -5,7 +5,7 @@ import java.util.Objects;
 
 public class TP29 {
 
-    static int[] bouger (String[] dir){
+    static int[] bouger(String[] dir) {
         int[] pos = new int[2];
         pos[0] = (int) Arrays.stream(dir).filter(direction -> Objects.equals(direction, "droite")).count()
                 - (int) Arrays.stream(dir).filter(direction -> Objects.equals(direction, "gauche")).count();
