@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class TP27_FindIn2DTab {
     static ArrayList<int[]> findIn2DTab (int[][] tab, int number){
-        ArrayList<int[]> results = new ArrayList<int[]>();
+        ArrayList<int[]> results = new ArrayList<>();
         for (int i = 0; i < tab.length; i++) {
             for (int j = 0; j < tab[i].length; j++) {
                 if (tab[i][j] == number){
