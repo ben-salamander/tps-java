@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class TP26_Prefixe {
     //Methodes
     static boolean isPrefixe (String mot, String prefixe){
-        return mot.substring(0, prefixe.length()).equals(prefixe);
+        return mot.substring(0, prefixe.length()).toLowerCase().equals(prefixe.toLowerCase());
     }
 
     //MAIN
