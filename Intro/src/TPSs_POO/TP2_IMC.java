@@ -24,7 +24,7 @@ public class TP2_IMC {
         }
 
         //Méthodes
-        public double imc() {
+        private double imc() {
             return this.poids / (Math.pow(this.taille, 2));
         }
 
