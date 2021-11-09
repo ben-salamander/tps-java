@@ -3,10 +3,10 @@ package TPSs_POO.TP5_Bibliotheque.classes;
 import TPSs_POO.TP5_Bibliotheque.TP5_Bibliotheque;
 
 public class Exemplaire {
-    //Attribut
+    //ATTRIBUTS
     private Oeuvre oeuvre;
 
-    //Constructeurs
+    //CONSTRUCTEURS
     public Exemplaire(Oeuvre oeuvre) {
         this.oeuvre = oeuvre;
         System.out.printf("Nouvel exemplaire -> %s, %s, en %s\n",
@@ -23,10 +23,13 @@ public class Exemplaire {
                 this.oeuvre.getLangue());
     }
 
+    //METHODES
+    //Get
     public Oeuvre getOeuvre() {
         return oeuvre;
     }
 
+    //Afficher
     public void afficher() {
         System.out.printf("Un exemplaire de %s, %s, en %s\n",
                 this.oeuvre.getTitre(),

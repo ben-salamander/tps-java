@@ -4,16 +4,18 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Bibliotheque {
-    //Attributs
+    //ATTRIBUTS
     private String nom;
     private ArrayList<Exemplaire> exemplaires = new ArrayList<Exemplaire>();
 
-    //Constructeurs
+    //CONSTRUCTEURS
     public Bibliotheque(String nom) {
         this.nom = nom;
         System.out.printf("La bibliothèque %s est ouverte\n", this.nom);
     }
 
+    //METHODES
+    //Get
     public String getNom() {
         return nom;
     }
@@ -22,6 +24,7 @@ public class Bibliotheque {
         return exemplaires.size();
     }
 
+    //Stocker
     public void stocker(Oeuvre oeuvre, int n) {
         for (int i = 0; i < n; i++) {
             this.exemplaires.add(new Exemplaire(oeuvre));
@@ -32,6 +35,7 @@ public class Bibliotheque {
         this.exemplaires.add(new Exemplaire(oeuvre));
     }
 
+    //Lister Exemplaire
     public ArrayList<Exemplaire> listerExemplaires(String langue) {
         ArrayList<Exemplaire> listExemplaire = new ArrayList<>();
         for (Exemplaire exemplaire : this.exemplaires) {
@@ -46,10 +50,12 @@ public class Bibliotheque {
         return exemplaires;
     }
 
+    //Compter Exemplaire
     public long compterExemplaire(Oeuvre oeuvre) {
         return exemplaires.stream().filter(ex -> Objects.equals(ex.getOeuvre(), oeuvre)).count();
     }
 
+    //Afficher Auteur
     public void afficherAuteur(boolean prime) {
         if (prime) {
             for (int i = 0; i < this.getNbExemplaires(); i++) {

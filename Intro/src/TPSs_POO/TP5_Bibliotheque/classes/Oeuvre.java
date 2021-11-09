@@ -1,11 +1,12 @@
 package TPSs_POO.TP5_Bibliotheque.classes;
 
 public class Oeuvre {
+    //ATTRIBUTS
     private final Auteur auteur;
     private String titre;
     private String langue = "francais";
 
-    //Constructeurs
+    //CONSTRUCTEUR
         public Oeuvre(String titre, Auteur auteur, String langue) {
         this.titre = titre;
         this.langue = langue;
@@ -17,7 +18,8 @@ public class Oeuvre {
         this.titre = titre;
     }
 
-    //Méthodes
+    //METHODES
+    //Get
     public Auteur getAuteur() {
         return auteur;
     }
@@ -30,6 +32,7 @@ public class Oeuvre {
         return langue;
     }
 
+    //Afficher
     public void afficher() {
         System.out.printf("%s, %s, en %s\n", this.titre, this.auteur.getNom(), this.langue);
     }
