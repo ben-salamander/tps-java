@@ -6,11 +6,11 @@ public class TP4_Laboratoire {
         final int ESPERANCE_VIE_DEFAUT = 36;
 
         //Attributs
-        int poids;
-        String couleur;
-        int age = 0;
-        int esperanceVie = ESPERANCE_VIE_DEFAUT;
-        boolean clonee;
+        private int poids;
+        private String couleur;
+        private int age = 0;
+        private int esperanceVie = ESPERANCE_VIE_DEFAUT;
+        private boolean clonee;
 
         //Constructeur
         public Souris(int poids, String couleur, int age, int esperanceVie) {
