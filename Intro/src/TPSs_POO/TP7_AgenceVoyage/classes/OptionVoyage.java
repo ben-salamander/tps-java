@@ -2,7 +2,7 @@ package TPSs_POO.TP7_AgenceVoyage.classes;
 
 public abstract class OptionVoyage {
     //ATTRIBUTS
-    private String nom;
+    private final String nom;
     final private double prix;
 
     //CONSTRUCTEUR

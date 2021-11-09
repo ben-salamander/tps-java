@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class KitVoyage {
     //ATTRIBUTS
-    private ArrayList<OptionVoyage> optionVoyages = new ArrayList<>();
-    private String depart;
-    private String destination;
+    private final ArrayList<OptionVoyage> optionVoyages = new ArrayList<>();
+    private final String depart;
+    private final String destination;
 
     //CONSTRUCTEUR
     public KitVoyage(String depart, String destination) {
@@ -25,13 +25,13 @@ public class KitVoyage {
 
     @Override
     public String toString() {
-        String result = "Voyage de " + this.depart + " à " + this.destination + ", avec pour option(s) :\n";
+        StringBuilder result = new StringBuilder("Voyage de " + this.depart + " à " + this.destination + ", avec pour option(s) :\n");
         for (OptionVoyage option : optionVoyages) {
-            result += option.getNom() + " -> " + option.prix() + " CHF\n";
+            result.append(option.getNom()).append(" -> ").append(option.prix()).append(" CHF\n");
         }
-        result += "Prix total : " + this.prix();
+        result.append("Prix total : ").append(this.prix());
 
-        return result;
+        return result.toString();
     }
 
     public void ajouterOption(OptionVoyage option) {
