@@ -3,18 +3,18 @@ package TPSs_POO.TP7_AgenceVoyage.classes;
 import java.util.ArrayList;
 
 public class KitVoyage {
-    //ATTRIBUTS
+//    ATTRIBUTS
     private final ArrayList<OptionVoyage> optionVoyages = new ArrayList<>();
     private final String depart;
     private final String destination;
 
-    //CONSTRUCTEUR
+//    CONSTRUCTEUR
     public KitVoyage(String depart, String destination) {
         this.depart = depart;
         this.destination = destination;
     }
 
-    //METHODES
+//    METHODES
     public double prix(){
         double prix = 0;
         for (OptionVoyage option : optionVoyages) {
@@ -23,6 +23,7 @@ public class KitVoyage {
         return prix;
     }
 
+    //toString
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder("Voyage de " + this.depart + " à " + this.destination + ", avec pour option(s) :\n");
@@ -34,6 +35,7 @@ public class KitVoyage {
         return result.toString();
     }
 
+    //Options management
     public void ajouterOption(OptionVoyage option) {
         if (option != null) {
             this.optionVoyages.add(option);
