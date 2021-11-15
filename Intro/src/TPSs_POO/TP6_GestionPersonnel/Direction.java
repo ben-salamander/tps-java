@@ -19,7 +19,7 @@ public class Direction {
         clbit.suppPersonne("Jimmy Echangeur");
 
         for (int i = 0; i < clbit.getNbPersonnes(); i++) {
-            if(clbit.getPersonne(i) != null) System.out.println(clbit.getPersonne(i).toString());
+            System.out.println(clbit.getPersonne(i).toString());
         }
     }
 }
