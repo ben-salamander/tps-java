@@ -1,4 +1,4 @@
-package TPSs_POO;
+package TPSs_POO.TP_1_2_3_4;
 
 public class TP2_IMC {
     //Classes
