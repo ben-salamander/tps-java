@@ -1,8 +1,8 @@
 package TPSs_POO.TP_Validation.Classes.Natural;
 
-import TPSs_POO.TP_Validation.Classes.Abstract.Produit;
+import TPSs_POO.TP_Validation.Classes.Abstract.Accessoire;
 
-public class Vitre extends Produit {
+public class Vitre extends Accessoire {
     //   Constantes
     private static final double PRIX_BASE_VITRE = 20;
 
