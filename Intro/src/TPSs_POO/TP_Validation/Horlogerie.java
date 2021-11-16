@@ -23,5 +23,6 @@ public class Horlogerie {
         maMontre.affComposants();
         System.out.println("---------------");
         maMontre.getMecanisme().affComplet();
+        System.out.println("---------------");
     }
 }
