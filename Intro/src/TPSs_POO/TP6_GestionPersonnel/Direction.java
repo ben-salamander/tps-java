@@ -21,5 +21,6 @@ public class Direction {
         for (int i = 0; i < clbit.getNbPersonnes(); i++) {
             System.out.println(clbit.getPersonne(i).toString());
         }
+
     }
 }
